@@ -16,5 +16,5 @@ SQL statements can receive input-only parameters, output-only parameters, and bi
 </p>
 <p align="justify">
 The following example shows how to execute a SQL statement that updates employee by employee id (please, check this post for further information).
-The SQL statement requires the following parameters: prmFirstName , prmLastName, prmEmail, prmPhoneNumber, prmHireDate, prmSalary,prmCommission and prmEmployeeId.
+The SQL statement requires the following parameters: <i>prmFirstName , prmLastName, prmEmail, prmPhoneNumber, prmHireDate, prmSalary,prmCommission</i> and <i>prmEmployeeId</i>.
 </p>
