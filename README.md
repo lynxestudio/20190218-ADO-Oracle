@@ -15,6 +15,21 @@ SQL statements can receive input-only parameters, output-only parameters, and bi
 </ol>
 </p>
 <p align="justify">
-The following example shows how to execute a SQL statement that updates employee by employee id (please, check this post for further information).
-The SQL statement requires the following parameters: <i>prmFirstName , prmLastName, prmEmail, prmPhoneNumber, prmHireDate, prmSalary,prmCommission</i> and <i>prmEmployeeId</i>.
+The following example shows how to execute a SQL statement that updates employee by searching for employee id.
 </p>
+<i>Fig 1. Example Main Menu</i>
+<img src="images/fig1.png" width="893" height="364" alt="">
+<p align="justify">
+Choosing the first option queries the database and fetch all records.
+</p>
+<i>Fig 2. Showing all records</i>
+<img src="images/fig2.png" width="900" height="626" alt="">
+<p align="justify">
+With the second option, we can search for one record then updates some properties.
+</p>
+<img src="images/fig3.png" width="892" height="624" alt="">
+<p>
+Finally, the record is updated.
+</p>
+<img src="images/fig4.png" width="901" height="627" alt="">
+
