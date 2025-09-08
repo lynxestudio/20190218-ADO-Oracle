@@ -4,10 +4,10 @@ using System.Data;
 using System.Configuration;
 internal static class ConnectionManager
 {
-    static OracleConnection connection = null;
+    static OracleConnection? connection = null;
     public static OracleConnection GetConnection()
     {
-        string connectionString = null;
+        string? connectionString = null;
         try
         {
             connectionString = ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString;

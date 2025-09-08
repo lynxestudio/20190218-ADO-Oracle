@@ -30,7 +30,7 @@ namespace Helpers
             Console.WriteLine("+" + new string('-', width - 2) + "+");
         }
 
-        internal static string Scanf(string message)
+        internal static string? Scanf(string message)
         {
             Console.Write("\t[ " + message + " ]\t");
             return Console.ReadLine();
@@ -41,6 +41,14 @@ namespace Helpers
             Console.WriteLine();
             Console.WriteLine("\tPress [Enter] to continue...");
             Console.ReadLine();
+        }
+
+        internal static string? Continue()
+        {
+            string? option = "NO";
+            Console.Write("Continue ? YES/NO > ");
+            option = Console.ReadLine();
+            return option;
         }
 
         internal static void PrintMessage(string message)
@@ -76,11 +84,15 @@ namespace Helpers
         internal static Employee ScanEmployee()
         {
             var e = new Employee();
-            string[] labels = { "Employee ID: ",
-                "First name: ", "Last name: ", "Email: ", "Phone: "
-                ,"Hire Date: ","Commission","Salary: "
+            string[] labels = {
+                "Employee ID: "
+                ,"First name: "
+                ,"Last name: "
+                ,"Email: "
+                ,"Salary: "
+                
             };
-            var fields = new string[labels.Length];
+            string?[] fields = new string[labels.Length];
             for (var i = 0; i < labels.Length; i++)
             {
                 fields[i] = Scanf(labels[i]);
@@ -90,10 +102,7 @@ namespace Helpers
             e.FirstName = fields[1];
             e.LastName = fields[2];
             e.Email = fields[3];
-            e.PhoneNumber = fields[4];
-            e.HireDate = fields[5];
-            e.CommissionPct = fields[6];
-            e.Salary = fields[7];
+            e.Salary = fields[4];
             return e;
         }
     }
